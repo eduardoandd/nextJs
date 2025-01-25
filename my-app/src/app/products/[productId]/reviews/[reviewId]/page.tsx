@@ -19,7 +19,7 @@ export default function ReviewInfo( {params}:ReviewParams ){
         notFound()
     }
     if(parseInt(params.reviewId) === 900){
-        throw Error('Invalid Id.')
+        throw Error('Invalid 900 Id.')
     }
 
 

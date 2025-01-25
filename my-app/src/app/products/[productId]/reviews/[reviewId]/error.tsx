@@ -1,7 +1,7 @@
 'use client'
 
-export default function Error(){
+export default function Error({error}: {error:Error}){
     return (
-        <div>Invalid Id</div>
+        <div>{error.message}</div>
     )
 }
