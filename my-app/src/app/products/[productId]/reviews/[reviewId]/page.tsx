@@ -1,3 +1,4 @@
+import { Metadata } from 'next'
 import {notFound} from 'next/navigation'
 
 interface ReviewParams {
@@ -7,7 +8,13 @@ interface ReviewParams {
     }
 }
 
-export default function Review( {params}:ReviewParams ){
+export const metadata:Metadata ={
+    title:{
+        absolute:'Review X'
+    }
+}
+
+export default function ReviewInfo( {params}:ReviewParams ){
     if(parseInt(params.reviewId) > 1000){
         notFound()
     }

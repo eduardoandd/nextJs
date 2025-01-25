@@ -1,8 +1,15 @@
+import { Metadata } from 'next'
 import {notFound} from 'next/navigation'
 
 interface ProductParams{
     params: {
         productId:string
+    }
+}
+
+export const metadata:Metadata ={
+    title:{
+        absolute:'Produto X'
     }
 }
 
