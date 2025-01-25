@@ -24,3 +24,7 @@ Rotas, rotas aninhadas e rotas dinamicas.
 
 ============= Página 404 not Found =============
 Personalizando o erro 404 para cada page.
+
+============= Layout =============
+arquivo pai que será exibido em todos os seus filhos.
+
