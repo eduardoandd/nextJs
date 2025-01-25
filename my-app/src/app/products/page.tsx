@@ -1,4 +1,6 @@
 import { Metadata } from "next"
+import Link from 'next/link'
+
 
 export const metadata: Metadata ={
     title: 'Produtos'
@@ -7,9 +9,9 @@ export const metadata: Metadata ={
 export default function Products(){
     return(
         <div className="">
-            <p>Produto 1</p>
-            <p>Produto 2</p>
-            <p>Produto 3</p>
+            <Link href={"/products/1"}>Produto 1</Link>
+            <Link href={"/products/2"}>Produto 2</Link>
+            <Link href={"/products/3"} replace>Produto 3</Link>
         </div>
     )
 }
