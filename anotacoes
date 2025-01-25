@@ -1,4 +1,20 @@
-* Next.js é um framework para ReactJs
-* Aplicação pré renderizada no servidor, Melhorando integração com o servidor (SSR)
-* Pré configurado
+============= RENDERIZAÇÃO =============
+CSR: Client Side rendering.
+SSR: Server side Rendering.
+SEO: Search Engne Optimization
 
+No react convencional, toda nossa aplicação é renderizada 100% no navegador.
+Se adicionarmos Next.Js, ele vai reconhecer componentes que possam ser renderizado
+no lado do servidor fazendo assim uma pré renderização, evitando sobrecarregar o navegador e assim aumentando a performace. tras vantagem também nas questões de busca da google, já que boa parte da aplicação já foi renderizada.
+
+============= ARQUIVOS =============
+tsconfig: Estilização do TypeScript
+tailwind.config.ts: configurações de estilização css
+postcss.config: Necessário para utilização do tailwind
+package.json: gerenciador de dependências
+node_modules: onde tá instalado todas as dependências
+public: pasta que tem arquivos estáticos.
+Pasta app:
+    global.css: importações básicas do tailwind e estilização pre configurdada.
+    layout.tsx primeiro arquivo que é chamado quando inicia a aplicação
+    
