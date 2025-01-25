@@ -18,6 +18,12 @@ export default function ReviewInfo( {params}:ReviewParams ){
     if(parseInt(params.reviewId) > 1000){
         notFound()
     }
+    if(parseInt(params.reviewId) === 900){
+        throw Error('Invalid Id.')
+    }
+
+
+
     return(
         <div className="">
             <p>Produto {params.productId}</p>
