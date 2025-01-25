@@ -17,4 +17,7 @@ public: pasta que tem arquivos estáticos.
 Pasta app:
     global.css: importações básicas do tailwind e estilização pre configurdada.
     layout.tsx primeiro arquivo que é chamado quando inicia a aplicação
-    
+
+
+============= ROTEAMENTO =============
+Rotas e rotas aninhadas.
