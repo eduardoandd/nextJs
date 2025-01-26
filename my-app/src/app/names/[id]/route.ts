@@ -18,3 +18,19 @@ export async function PATCH(
    data[index].name = text
    return Response.json(data[index])
 }
+
+export async function DELETE(
+    request:Request,
+    {params}: {params : {id:string}}
+) {
+    // pega o index
+    const index = data.findIndex(
+        user => user.id === parseInt(params.id)
+    )
+    const deletedUser = data[index]
+    data.splice(index,1)
+    return Response.json(deletedUser)
+
+
+
+}
