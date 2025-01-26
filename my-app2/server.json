@@ -1,0 +1,6 @@
+{
+    "tags":[
+        {"id":1,"slug": "react"},
+        {"id":2,"slug": "next"}
+    ]
+}
