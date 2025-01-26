@@ -31,4 +31,8 @@ arquivo pai que será exibido em todos os seus filhos.
 ============= Template =============
 Mesmo efeito do layout, porém não preserva informações
 
+============= COOKIES    =============
+Informações que o servidor envia pro cliente, ai o cliente armazena as informações e devolve po servidor.
+
+
 
