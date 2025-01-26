@@ -10,6 +10,7 @@ export async function  GET(request: NextRequest) {
 
     console.log(requestHeaders.get('Authorization'));
     console.log(headerList.get('Authorization'));
+    console.log(cookies().get('token'));
     console.log(theme);
     
 
