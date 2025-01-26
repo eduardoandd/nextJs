@@ -1,12 +1,16 @@
-import { NextUrlWithParsedQuery } from "next/dist/server/request-meta";
 import { data } from "../data";
-import { NextRequest } from "next/server";
+import { redirect } from "next/navigation";
 
-// export async function GET(_request:Request,{params}: {params: {id:string}}) {
-//     const name = data.find(name => name.id === parseInt(params.id))
-//     return Response.json(name)
+export async function GET(_request:Request,{params}: {params: {id:string}}) {
+
+    if(parseInt(params.id) > data.length){
+        redirect('/names')
+    }
+
+    const name = data.find(name => name.id === parseInt(params.id))
+    return Response.json(name)
     
-// }
+}
 
 export async function PATCH(
     request:Request,
@@ -34,12 +38,3 @@ export async function DELETE(
     return Response.json(deletedUser)
 }
 
-export async function GET(request:NextRequest) {
-    const searchParams = request.nextUrl.searchParams
-    const query = searchParams.get('query')
-
-    const filteredNames = query ? data.filter(name => name.name.includes(query)): data
-
-    return Response.json(filteredNames)
-
-}
